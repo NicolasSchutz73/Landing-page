@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "SF Pro Display Medium";
+    src: url(../fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+h2 {
+    font-family: "SF Pro Display Medium", sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    margin: 1.25rem 0 1.25rem 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0 0 1.25rem 0;
+}
+
+.arrow-button {
+    font-family: "SF Pro Display Medium", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.arrow-button img {
+    margin-left: 1rem;
+}
+
+.black > * {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.white > * {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+span {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* **************************************** */
+html, body {
+    font-family: "SF Pro Display Regular", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section-1 {
+    overflow-y: hidden;
+    min-height: 100vh;
+    background: no-repeat url("../img/background-section-1.png") center/cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.688rem 1.5rem 0 1.5rem;
+}
+
+#menu-hamburger div {
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: 33.2% 1fr repeat(2, 14.1%) 33.2%;
+    grid-template-rows: 6.4% 23.8% 27% 7% 24.8% 1fr;
+    grid-template-areas:
+        '. . . . .'
+        "l . t t ."
+        "l . . . ."
+        "l . . r r"
+        ". . . r r"
+        ". . . . .";
+    min-height: 1089px;
+}
+
+.section-2 .img-left {
+    background: no-repeat url("../img/section-2-img-left.png") center/cover;
+    grid-area: l;
+}
+
+.section-2 .img-right {
+    background: no-repeat url("../img/section-2-img-right.png") center/cover;
+    grid-area: r;
+}
+
+.section-2 .content-container {
+    grid-area: t;
+}
+
+.section-3 {
+    display: grid;
+    grid-template-columns: 8.9% 28.1% 1fr 58%;
+    grid-template-rows: 18% 67% 1fr;
+    grid-template-areas:
+    ". . . ."
+    ". a . i"
+    ". . . .";
+    background: black;
+    min-height: 750px;
+}
+
+.section-3 .content-container {
+    grid-area: a;
+    text-align: right;
+}
+
+.section-3 .img {
+    grid-area: i;
+    background: no-repeat url("../img/sectiont-3-img.png") center/cover;
+}
+
+.section-3 .content-container span:first-child {
+    margin-bottom: 13.563rem;
+}
+
+.section-4 {
+    display: flex;
+    align-items: center;
+    background: no-repeat url("../img/background-section-4.png") center/cover;
+    min-height: 900px;
+}
+
+.section-4 .content-container {
+    max-width: 411px;
+    margin-left: 5.625rem;
+}
+
+.section-4 .content-container span:first-child {
+    margin-bottom: 1rem;
+}
+
+.section-5 {
+    display: grid;
+    grid-template-columns: 8.9% 28.1% 1fr 58%;
+    grid-template-rows: 18% 67% 1fr;
+    grid-template-areas:
+    ". . . ."
+    ". w . x"
+    ". . . .";
+    min-height: 750px;
+}
+
+.section-5 .content-container {
+    grid-area: w;
+    text-align: right;
+}
+
+.section-5 .img {
+    grid-area: x;
+    background: no-repeat url("../img/section-5-img-right.png") center/cover;
+}
+
+.section-5 .content-container span:first-child {
+    margin-bottom: 13.563rem;
+}
+
+.section-6 {
+    display: grid;
+    grid-template-columns: 33.1% 13% 47.6% 1fr;
+    grid-template-rows: 6% 81.7% 4.6% 1fr;
+    min-height: 1201px;
+    grid-template-areas:
+    ". . . ."
+    "c . v ."
+    ". . v ."
+    ". . . .";
+}
+
+.section-6 .img-right {
+    grid-area: v;
+}
+
+.section-6 .content-container {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr 49.4% 35.7%;
+    grid-template-rows: 8% 6.8% 61.2% 1fr 18.4%;
+    grid-template-areas:
+    ". . g"
+    ". . ."
+    "h h h"
+    ". . ."
+    ". j j";
+}
+
+.section-6 .content-container .column-container {
+    grid-area: g;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.section-6 .column-container span:first-of-type {
+    margin-bottom: 3.125rem;
+}
+
+.section-6 .content-container .img-left {
+    grid-area: h;
+}
+
+.section-6 .text-container {
+    grid-area: j;
+    text-align: right;
+}
+
+.section-6 .content-container .img-left {
+    background: no-repeat url("../img/section-6-img-left.png") center/cover;
+}
+
+.section-6 .img-right {
+    background: no-repeat url("../img/section-6-img-right.png") center/cover;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .link a:first-of-type {
+    margin: 0 4.688rem 0 0;
+}
+
+footer .link a:nth-child(2) {
+    margin: 0 1.438rem 0 0;
+}
